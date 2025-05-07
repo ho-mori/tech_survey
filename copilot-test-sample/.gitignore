@@ -1,0 +1,25 @@
+# 依存パッケージ
+node_modules/
+
+# テスト出力やキャッシュ
+coverage/
+*.log
+jest-cache/
+*.tsbuildinfo
+
+# TypeScript コンパイル成果物（必要に応じて）
+*.js
+*.js.map
+*.d.ts
+
+# OS・エディタ・IDE関連
+.DS_Store
+Thumbs.db
+.vscode/
+
+# 環境ファイル（今後使う可能性がある場合）
+.env
+.env.*.local
+
+# npmロックファイル（チーム方針で不要な場合）
+# package-lock.json
