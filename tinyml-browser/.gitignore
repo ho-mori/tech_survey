@@ -1,0 +1,19 @@
+# node.jsの依存パッケージ
+node_modules/
+
+# ロックファイル（プロジェクト方針で共有しない場合）
+# package-lock.json
+
+# ログファイルや一時ファイル
+*.log
+*.tmp
+*.temp
+
+# OSやエディタの一時ファイル
+.DS_Store
+Thumbs.db
+.vscode/
+
+# 環境ファイル（今後.envなどを使う場合）
+.env
+.env.*.local

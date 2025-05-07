@@ -1,0 +1,28 @@
+# node_modules（依存パッケージ）
+node_modules/
+
+# bunのロックファイル（ロックファイルはチームで共有するなら残す）
+# bun.lockb
+
+# 出力ファイル（ビルド生成物）
+dist/
+build/
+
+# 一時ファイル
+*.log
+*.tmp
+*.temp
+
+# OS・エディタ関連
+.DS_Store
+Thumbs.db
+.vscode/
+
+# TypeScriptの出力（tsconfigによって異なる場合あり）
+*.js
+*.js.map
+*.d.ts
+
+# その他
+.env
+.env.*.local

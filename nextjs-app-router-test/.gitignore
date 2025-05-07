@@ -1,0 +1,30 @@
+# 依存パッケージ
+node_modules/
+
+# bunのロックファイル（必要に応じてコメントアウト）
+# bun.lock
+
+# Next.js ビルド成果物
+.next/
+out/
+
+# TypeScript 出力（tsc直打ち時など）
+*.js
+*.js.map
+*.d.ts
+
+# dotenv 環境ファイル
+.env
+.env.*.local
+
+# ログ・一時ファイル
+*.log
+*.tmp
+
+# OS・エディタ関連
+.DS_Store
+Thumbs.db
+.vscode/
+
+# IDE設定など（必要であれば）
+.idea/

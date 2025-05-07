@@ -1,0 +1,35 @@
+# Node modules（依存パッケージ）
+node_modules/
+
+# 出力ディレクトリ（wranglerやtscによって生成される）
+dist/
+build/
+.worker/
+
+# バンドルファイル（wranglerのoutput）
+bundle.js
+bundle.js.map
+
+# 一時ファイル・ログ
+*.log
+*.tmp
+*.temp
+
+# テストキャッシュやカバレッジ
+.vitest/
+coverage/
+
+# エディタやOS関連
+.vscode/
+.DS_Store
+Thumbs.db
+
+# dotenv（APIキーなどの環境変数）
+.env
+.env.*.local
+
+# Wranglerや一時設定ファイル（通常はコミット対象だが一時なら除外可）
+.wrangler/
+
+# lockファイル（プロジェクトポリシーに応じて）
+# package-lock.json
