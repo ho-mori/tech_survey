@@ -1,0 +1,25 @@
+# nodeの依存パッケージ
+node_modules/
+
+# Viteのビルド出力（outDirに応じて調整）
+dist/
+
+# ロックファイル（共有しない方針なら）
+# package-lock.json
+
+# ログ・一時ファイル
+*.log
+*.tmp
+*.temp
+
+# OS・エディタ・IDE関連
+.DS_Store
+Thumbs.db
+.vscode/
+
+# 環境変数ファイル（今後使用する場合）
+.env
+.env.*.local
+
+# 除外フォルダー
+除外フォルダー/
