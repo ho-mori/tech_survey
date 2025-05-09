@@ -1,0 +1,29 @@
+# Trivy キャッシュ・出力
+trivy-result.json
+
+# Node.js 関連
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS / エディタ特有
+.DS_Store
+Thumbs.db
+.vscode/
+
+# テスト出力など
+coverage/
+dist/
+build/
+
+# 環境ファイル（機密情報）
+.env
+.env.*
+
+# ローカルアプリ設定
+*.local
