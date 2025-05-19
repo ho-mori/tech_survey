@@ -1,0 +1,41 @@
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push: # ブランチ制限が必要なら `branches:` を追加
+    paths-ignore:
+      - "**/*.md"
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ソース取得
+      - uses: actions/checkout@v4
+
+      # Node.js セットアップ（必要に応じて変更）
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      # 依存解決
+      - name: Install deps
+        run: npm ci
+
+      # テスト
+      - name: Run tests
+        run: npm test
+
+      # ビルド
+      - name: Build
+        run: npm run build
+
+      # 成果物を保存 (オプション)
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: |
+            dist/**
