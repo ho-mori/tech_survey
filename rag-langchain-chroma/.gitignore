@@ -1,0 +1,33 @@
+############################
+#  Python / LangChain RAG  #
+############################
+
+# --- 仮想環境 -----------------
+.venv/
+venv/
+env/
+
+# --- ビルド / キャッシュ -------
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+pip-wheel-metadata/
+
+# --- VectorDB 永続ディレクトリ -
+vector_store/
+
+# --- 環境変数ファイル -----------
+.env
+
+# --- IDE / エディタ -------------
+.vscode/
+.idea/
+
+# --- OS 依存ファイル ------------
+.DS_Store
+Thumbs.db
